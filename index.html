@@ -47,17 +47,30 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
 
             public static ClientResponse SendSimpleMessage() {
-                Client client = Client.create();
-                client.addFilter(new HTTPBasicAuthFilter(
-                    "api","key-3ax6xnjp29jd6fds4gc373sgvjxteol0"));
-                WebResource webResource = client.resource("https://api.mailgun.net/v3/samples.mailgun.org/messages");
-                MultivaluedMapImpl formData = new MultivaluedMapImpl();
-                formData.add("from", "Excited User <excited@samples.mailgun.org>");
-                formData.add("to", "jding@parkland.edu");
-                formData.add("subject", "Hello");
-                formData.add("text", "Testing some Mailgun awesomeness!");
-                return webResource.type(MediaType.APPLICATION_FORM_URLENCODED).
-                    post(ClientResponse.class, formData);
+                        
+
+            // using SendGrid's v3 Node.js Library
+// https://github.com/sendgrid/sendgrid-nodejs
+var helper = require('sendgrid').mail
+  
+from_email = new helper.Email("test@example.com")
+to_email = new helper.Email("test@example.com")
+subject = "Sending with SendGrid is Fun"
+content = new helper.Content("text/plain", "and easy to do anywhere, even with Node.js")
+mail = new helper.Mail(from_email, subject, to_email, content)
+
+var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+var request = sg.emptyRequest({
+  method: 'POST',
+  path: '/v3/mail/send',
+  body: mail.toJSON()
+});
+
+sg.API(request, function(error, response) {
+  console.log(response.statusCode)
+  console.log(response.body)
+  console.log(response.headers)
+})
             }
         </script>
     </body>
