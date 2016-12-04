@@ -27,7 +27,7 @@
         </form>
         
         <address>
-            Email us at <a onclick="SendSimpleMessage()">jding@parkland.edu</a>.<br>      
+            Email us at <a href="mailto:jding@parkland.edu">jding@parkland.edu</a>.<br>      
         </address>
 
 
@@ -50,8 +50,7 @@
                 Client client = Client.create();
                 client.addFilter(new HTTPBasicAuthFilter(
                     "api","key-3ax6xnjp29jd6fds4gc373sgvjxteol0"));
-                WebResource webResource = client.resource(
-                    "https://api.mailgun.net/v3/samples.mailgun.org/messages");
+                WebResource webResource = client.resource("https://api.mailgun.net/v3/samples.mailgun.org/messages");
                 MultivaluedMapImpl formData = new MultivaluedMapImpl();
                 formData.add("from", "Excited User <excited@samples.mailgun.org>");
                 formData.add("to", "jding@parkland.edu");
