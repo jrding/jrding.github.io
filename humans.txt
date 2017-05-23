@@ -13,37 +13,3 @@
 
     CSS3, HTML5
     Apache Server Configs, jQuery, Modernizr, Normalize.css
-
--------- or ---------
-
-/* THE TEAM */
-  Company: [insert name]
-  Website: [company url]
-  Contact: [email/contact info]
-
-  Project Manager: [insert name]
-  Contact: [email/contact info]
-  Social Media: [linkedin, facebook, twitter]
-
-  Lead Developer: [insert name]
-  Contact: [email/contact info]
-  Social Media: [linkedin, facebook, twitter]
-
-  Web Designer: [insert name]
-  Contact: [email/contact info]
-  Social Media: [linkedin, facebook, twitter]
-
-/* THANKS */
-  Extension Provider: [insert name]
-  Website: [company url]
-  Contact: [email/contact info]
-
-  Client Liason: [insert name]
-  Website: [company url]
-  Contact: [email/contact info]
-
-/* SITE DETAILS */
-  Company Name
-  URL
-  Launch Date
-  Date of Latest Update

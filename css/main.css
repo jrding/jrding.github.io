@@ -94,23 +94,122 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.hometitle1 {
+    text-align: center;
+    font-size: 18px;
+    font-family: helvetica, sans-serif;
+    
+} 
+
+.hometitle2 {
+    text-align: center;
+    font-size: 15px;
+    font-variant-caps: all-small-caps;
+    font-family: helvetica, sans-serif;
+    margin-top: -20px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    
+}
 
 
 
+#topmenu {
+    display: inline;
+    font-size: 20px;
+}
+
+#topmenu a {
+    color: black;
+    text-align: center;
+    padding:0 30px; 
+    text-decoration: none;
+}
+
+#topmenu a:hover {
+    color: brown;
+}
+
+.active a{
+    color: tan;
+    text-shadow: 1px 1px 2px black;
+}
+
+.topnav {
+    align-content: center;
+}
+
+html, body {
+  height: 100%;
+}
+
+#containerpic {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+#container2 {
+    background-image: url(../img/lovecoffee2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.infotxt {
+    text-align: center;
+    color: lightgrey;
+    
+}
+
+#footer {
+   clear: both;
+}
 
 
+li {
+    list-style-type: none;
+    margin-left: 15px;
+}
 
+#menutitle {
+    margin-left: 15px;
+}
 
+.section {
+    display: block;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    text-align: left;
+    max-width: 400px;
+    margin-left: 20px;
+    
+}
 
+#subscript {
+    font-size: 10px;
+    color: grey;
+    text-align: center;
+    margin-left: 20px;
+}
 
-
-
-
-
-
-
-
-
+.menuz {
+  box-sizing: border-box;
+    display: block;
+    text-size-adjust: 100%;
+   
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
