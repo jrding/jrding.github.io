@@ -1,0 +1,50 @@
+/* add your css on this page */
+body { 
+    background-color: #CFCA95;
+    color: #1E1B0E;
+    margin: 0;
+    padding: 0;
+}
+
+#MainArticle {
+    border: #847A55 15px ridge;
+    margin: 15px;
+    padding: 10px;
+    background-color: cornsilk;
+}
+
+img,button {
+    border: cornsilk 3px groove;
+    padding: 2px;
+}
+
+#GandB {
+    margin-left: 25px;
+    margin-top: 8px;
+}
+#menuPlanner,span {
+    float: right;
+    margin: 0 10px 0 20px;
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+button {
+    width: 150px;
+    height: 100px;
+    color: #252217;
+    background-color: cornsilk;
+    margin: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    margin: 5px;
+}
