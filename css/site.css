@@ -1,0 +1,53 @@
+/* add your css on this page */
+body { 
+    background-color: #CFCA95;
+    color: #1E1B0E;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#MainArticle {
+    border: #847A55 15px ridge;
+    margin: 15px;
+    padding: 10px;
+    background-color: cornsilk;
+}
+
+img {
+    border: cornsilk 3px groove;
+    padding: 2px;
+}
+
+#GandB {
+    margin-left: 25px;
+    margin-top: 8px;
+}
+#menuPlanner,span {
+    float: right;
+    margin: 0 10px 0 20px;
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+a {
+    color: #252217;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+footer {
+    margin: 5px;
+}
