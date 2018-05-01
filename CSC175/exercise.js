@@ -11,7 +11,7 @@ $(document).ready(function(){
 	});
 	*/
 	
-	var baseUrl = "http://jrding.github.io/CSC175/";
+	var baseUrl = "https://jrding.github.io/CSC175/";
 	
 	// setup links using data from episode-list
 	$.get(baseUrl + "api/episode-list.json", function(data){
